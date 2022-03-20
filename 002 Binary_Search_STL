@@ -1,0 +1,22 @@
+#include <iostream>
+#include<algorithm>
+
+// Binary Search STL
+
+using namespace std;
+int main() {
+    int arr[]={1,3,5,7,8,100};
+    int n=sizeof(arr)/sizeof(int);
+
+    int key;
+    cin>>key;
+
+    bool present = binary_search(arr,arr+n,key);
+    if(present==true)
+    {
+        cout<<"Key is found "<<endl;
+    }
+    else {
+        cout<<"Key is not found "<<endl;
+    }
+}
