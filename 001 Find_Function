@@ -1,0 +1,23 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    int arr[]={5,4,7,8,10};
+    int n=sizeof(arr)/sizeof(int);
+
+    int key; // this is we have to search in the array
+    cin>>key;
+
+    int *ans=find(arr,arr+n,key);
+
+    int idx=ans-arr;
+    if(idx==n)
+    {
+        cout<<"Key is not present "<<endl;
+    }
+    else {
+        cout<<"key is present at "<<idx<<endl;
+    }
+    return 0;
+}
