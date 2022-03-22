@@ -32,7 +32,7 @@ int main() {
     
     // if you want to the number of occurences of a particular number then
     
-    cout<<"number of occurences : "<<ans-x<<endl;
+    cout<<"number of occurences : "<<x-ans<<endl; // upeer_bound_idx-lower_bound_idx
 
     
 }
