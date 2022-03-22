@@ -1,0 +1,34 @@
+#include <iostream>
+#include<algorithm>
+
+// STL for finding the lower_bound and upper_bound
+
+/*
+Iterator lower_bound (Iterator first, Iterator last, const val) 
+Iterator upper_bound (Iterator first, Iterator last, const val) 
+lower_bound returns an iterator pointing to the first element in the range [first,last) which has a value not less than ‘val’. 
+
+and if the value is not present in the vector then it returns the end iterator.
+upper_bound returns an iterator pointing to the first element in the range [first,last) which has a value greater than ‘val’. 
+*/
+
+using namespace std;
+int main() {
+    int arr[]={10,20,40,40,40,50,60,1000};
+    int n=sizeof(arr)/sizeof(int);
+
+    int key;
+    cin>>key;
+    
+    int *ans=lower_bound(arr,arr+n,key);
+    cout<<"value is : "<<*ans<<endl;
+
+    cout<<"INDEX : "<<ans-arr<<endl;
+
+    int *ans=upper_bound(arr,arr+n,key);
+    cout<<"value is : "<<*ans<<endl;
+
+    cout<<"INDEX : "<<ans-arr<<endl;
+
+    
+}
