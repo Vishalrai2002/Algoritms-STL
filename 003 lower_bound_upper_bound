@@ -21,14 +21,14 @@ int main() {
     cin>>key;
     
     int *ans=lower_bound(arr,arr+n,key);
-    cout<<"value is : "<<*ans<<endl;
+    cout<<"first occurence is : "<<*ans<<endl;
 
     cout<<"INDEX : "<<ans-arr<<endl;
 
     int *ans=upper_bound(arr,arr+n,key);
-    cout<<"value is : "<<*ans<<endl;
+    cout<<"last occurence is : "<<*ans<<endl;
 
-    cout<<"INDEX : "<<ans-arr<<endl;
+    cout<<"INDEX : "<<ans-arr-1<<endl;
 
     
 }
