@@ -25,10 +25,14 @@ int main() {
 
     cout<<"INDEX : "<<ans-arr<<endl;
 
-    int *ans=upper_bound(arr,arr+n,key); // >
-    cout<<"last occurence is : "<<*ans<<endl;
+    int *x=upper_bound(arr,arr+n,key); // >
+    cout<<"last occurence is : "<<*x<<endl;
 
-    cout<<"INDEX : "<<ans-arr-1<<endl;
+    cout<<"INDEX : "<<x-arr-1<<endl;
+    
+    // if you want to the number of occurences of a particular number then
+    
+    cout<<"number of occurences : "<<ans-x<<endl;
 
     
 }
