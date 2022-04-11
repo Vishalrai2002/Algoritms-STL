@@ -9,9 +9,9 @@ int main()
     int key; // this is we have to search in the array
     cin>>key;
 
-    int *ans=find(arr,arr+n,key);
+    int *ans=find(arr,arr+n,key); // this return address so that's why we store this in pointer
 
-    int idx=ans-arr;
+    int idx=ans-arr; // Subtracting the addresses gives us the index of ans address bucket
     if(idx==n)
     {
         cout<<"Key is not present "<<endl;
