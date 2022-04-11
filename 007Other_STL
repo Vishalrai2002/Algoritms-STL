@@ -1,0 +1,37 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+void printarray(int *arr,int n)
+{
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+
+int main()
+{
+//   int arr[]={1,2,3,4,5,6,0};
+//   int n=sizeof(arr)/sizeof(int);
+//   printarray(arr,n);
+   
+//   rotate(arr,arr+3,arr+n);
+   // here from where we have to rotate the array
+   // here our output is 4 5 6 1 2 3
+   
+//   reverse(arr,arr+n); // here our ouput is 0 6 5 4 3 2 1 
+//   printarray(arr,n);
+
+     int a=10,b=30,c=40;
+    //  swap(a,b);
+    //  cout<<a<<" "<<b<<endl;
+    
+    // cout<<min(a,b)<<endl;
+    cout<<min(a,min(b,c));
+    // Same thing is applicabe for max 
+    
+    
+    return 0;
+}
